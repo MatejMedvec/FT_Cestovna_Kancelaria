@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "home": [
     { "text": "Domov", "href": "/", "disabled": true }
@@ -21,30 +20,7 @@
   ]
 }
 
-  
-=======
-{
-  "home": [
-    { "text": "Domov", "href": "/", "disabled": true }
-  ],
-  "aboutus": [
-    { "text": "Domov", "href": "/" },
-    { "text": "O nás", "href": "", "disabled": true }
-  ],
-  "gallery": [
-    { "text": "Domov", "href": "/" },
-    { "text": "Galéria", "href": "", "disabled": true }
-  ],
-  "contact": [
-    { "text": "Domov", "href": "/" },
-    { "text": "Kontakt", "href": "", "disabled": true }
-  ],
-  "blog": [
-    { "text": "Domov", "href": "/" },
-    { "text": "Blog", "href": "", "disabled": true }
-  ]
-}
 
   
->>>>>>> c16e87dea396cb738953becbbf49f52494672f22
+
   

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
     "heroSection": {
       "title": "Začni objavovať svet s nami",
@@ -87,94 +86,6 @@
       }
     ]
   }
-=======
-{
-    "heroSection": {
-      "title": "Začni objavovať svet s nami",
-      "description": "Vitajte v našom unikátnom svete dobrodružstva a objavovania! Sme váš spoľahlivý sprievodca na ceste za novými zážitkami, fascinujúcimi miestami a neopakovateľnými chvíľami. Od vrcholov majestátnych hôr po príboj tajomných morí, pozývame vás na cestu, kde každý krok je novým objavom.",
-      "image": "/img/map.jpg",
-      "altText": "Mapa sveta"
-    },
-    "continents": [
-      {
-        "name": "Amerika",
-        "icon": "fa-solid fa-earth-americas",
-        "color": "text-primary",
-        "description": "Kde sa spája minulosť s prítomnosťou, je miesto nekonečných objavov."
-      },
-      {
-        "name": "Európa",
-        "icon": "fa-solid fa-earth-europe",
-        "color": "text-success",
-        "description": "Vysoká kultúrna diverzita, efektívna doprava a mestský pulz robia Európu jedinečnou destináciou pre cestovateľov."
-      },
-      {
-        "name": "Ázia",
-        "icon": "fa-solid fa-earth-asia",
-        "color": "text-danger",
-        "description": "Vychutnajte si rozmanitú kuchyňu, spoznajte spirituálne tradície a objavte rýchlo rastúce hospodárstva."
-      },
-      {
-        "name": "Afrika",
-        "icon": "fa-solid fa-earth-africa",
-        "color": "text-warning",
-        "description": "Od saván a púští po historické poklady a exotickú faunu."
-      },
-      {
-        "name": "Oceánia",
-        "icon": "fa-solid fa-earth-oceania",
-        "color": "text-info",
-        "description": "Pláže s bielym pieskom, koralové útesy a pestrý podmorský život."
-      }
-    ],
-    "destinations": [
-      {
-        "name": "Egypt",
-        "image": "/img/egypt.jpg",
-        "price": 924
-      },
-      {
-        "name": "Cyprus",
-        "image": "/img/cyprus.jpeg",
-        "price": 930
-      },
-      {
-        "name": "Grécko",
-        "image": "/img/grecko.jpg",
-        "price": 815
-      }
-    ],
-    "extras": [
-      {
-        "title": "Objavuj",
-        "image": "/img/Objavuj.jpg",
-        "description": "Objavuj kultúry, ľudí, miesta a chuťové dobrodružstvá."
-      },
-      {
-        "title": "Skúšaj nové veci",
-        "image": "/img/jedlo.jpg",
-        "description": "Nebojte sa objavovať rôznorodé chute neznámych jedál."
-      },
-      {
-        "title": "Relaxuj",
-        "image": "/img/relax.jpg",
-        "description": "Otvárajte svoje srdce pokojným plážam a meditujte v prírode."
-      }
-    ],
-    "facts": [
-      {
-        "title": "Pyramídy v Gíze",
-        "content": "Staroveké pyramídy sú jednými z najznámejších archeologických pamiatok sveta."
-      },
-      {
-        "title": "Najväčší Počet Turistov",
-        "content": "Paríž priláka viac než 80 miliónov návštevníkov ročne."
-      },
-      {
-        "title": "Curry v Indii",
-        "content": "Indická kuchyňa je pestrá a každá oblasť má svoje vlastné špecifické curry."
-      }
-    ]
-  }
->>>>>>> c16e87dea396cb738953becbbf49f52494672f22
+
+
   
