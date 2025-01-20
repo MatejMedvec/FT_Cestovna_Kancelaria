@@ -1,0 +1,37 @@
+{
+    "slides": [
+      {
+        "title": "Berlín, Nemecko",
+        "description": "Brandenburská brána, patrí k najznámejším pamätihodnostiam Berlína.",
+        "image": "/img/berlin.jpg"
+      },
+      {
+        "title": "Benátky, Taliansko",
+        "description": "Benátky sú hlavným mestom severotalianskeho regiónu Benátsko.",
+        "image": "/img/benatky.jpg"
+      },
+      {
+        "title": "Bergen, Nórsko",
+        "description": "Bergen je druhé najväčšie mesto v Nórsku.",
+        "image": "/img/norway.jpg"
+      }
+    ],
+    "posts": [
+      {
+        "title": "Západ slnka v Rio de Janeiro",
+        "description": "Nič nie je lepšie ako sa kochať na západ slnka v Riu.",
+        "image": "/img/Brazil.jpg"
+      },
+      {
+        "title": "Pestrofarebné Japonsko",
+        "description": "Nečakal by som, že japonsko je tak zaujímavé.",
+        "image": "/img/japan.jpg"
+      },
+      {
+        "title": "Golden Gate",
+        "description": "Amerika.",
+        "image": "/img/usa.jpg"
+      }
+    ]
+  }
+  
