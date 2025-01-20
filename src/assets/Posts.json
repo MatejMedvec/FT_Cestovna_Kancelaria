@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "title": "Prvý príspevok",
+      "content": "Toto je obsah prvého príspevku.",
+      "imageUrl": "/img/paris.jpg",
+      "createdAt": "2025-01-20"
+    },
+    {
+      "id": 2,
+      "title": "Druhý príspevok",
+      "content": "Toto je obsah druhého príspevku.",
+      "imageUrl": "/img/sample2.jpg",
+      "createdAt": "2025-01-19"
+    }
+  ]
+  
