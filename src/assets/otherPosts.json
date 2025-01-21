@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "title": "Cestovanie po Ázii",
+      "content": "Úžasná kultúra a jedlo v rôznych krajinách Ázie. Nezabudnuteľné zážitky z Bangkoku, Tokia a Šanghaja.",
+      "image_url": "/img/Bangkok.jpeg",
+      "createdAt": "2025-01-01",
+      "userCreated": false
+    },
+    {
+      "id": 2,
+      "title": "Piesočné pláže",
+      "content": "Biele piesky a tyrkysová voda na Maledivách. Ideálne miesto na relaxáciu a oddych od každodenného života.",
+      "image_url": "/img/maledivy.jpg",
+      "createdAt": "2025-01-05",
+      "userCreated": false
+    },
+    {
+      "id": 3,
+      "title": "História v Európe",
+      "content": "Navštívte historické pamiatky po celom kontinente - od Kolosea v Ríme po Eiffelovu vežu v Paríži.",
+      "image_url": "/img/eiffel.jpg",
+      "createdAt": "2025-01-10",
+      "userCreated": false
+    },
+    {
+      "id": 4,
+      "title": "Dobrodružstvo v horách",
+      "content": "Preskúmajte Alpy alebo Himaláje, kde vás čakajú dychberúce výhľady a adrenalínové aktivity.",
+      "image_url": "/img/himalaya.jpg",
+      "createdAt": "2025-01-15",
+      "userCreated": false
+    },
+    {
+      "id": 5,
+      "title": "Divoký západ",
+      "content": "Cestujte naprieč americkým divokým západom a objavte národné parky ako Grand Canyon a Yellowstone.",
+      "image_url": "/img/Yellowstone.jpg",
+      "createdAt": "2025-01-20",
+      "userCreated": false
+    },
+    {
+        "id": 6,
+        "title": "Polárna expedícia",
+        "content": "Zážitok z polárnych oblastí s nádhernými ľadovcami a polárnou žiarou na severe Škandinávie.",
+        "image_url": "/img/scandinavia.webp",
+        "createdAt": "2025-01-25",
+        "userCreated": false
+      },
+      {
+        "id": 7,
+        "title": "Safari v Afrike",
+        "content": "Objavte divokú prírodu a majestátne zvieratá na safari v Serengeti alebo Krugerovom národnom parku.",
+        "image_url": "/img/nationalpark.jpg",
+        "createdAt": "2025-02-01",
+        "userCreated": false
+      },
+      {
+        "id": 8,
+        "title": "Plavba Karibikom",
+        "content": "Krištáľovo čisté more, biele pláže a tropické ostrovy čakajú na objavenie počas plavby Karibikom.",
+        "image_url": "/img/caribbean.jpeg",
+        "createdAt": "2025-02-05",
+        "userCreated": false
+      },
+      {
+        "id": 9,
+        "title": "Národné parky Austrálie",
+        "content": "Preskúmajte prírodné krásy Austrálie od Uluru po Veľký bariérový útes.",
+        "image_url": "/img/ULURU.jpg",
+        "createdAt": "2025-02-10",
+        "userCreated": false
+      },
+      {
+        "id": 10,
+        "title": "Mestské dobrodružstvá",
+        "content": "Zažite atmosféru veľkomiest ako New York, Londýn a Tokio s ich ikonickými atrakciami.",
+        "image_url": "/img/newyork.webp",
+        "createdAt": "2025-02-15",
+        "userCreated": false
+      }
+]
+  

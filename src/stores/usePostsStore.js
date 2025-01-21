@@ -45,5 +45,3 @@ export const usePostsStore = defineStore("posts", () => {
     getPostById,
   };
 });
-
-

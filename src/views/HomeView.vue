@@ -1,14 +1,14 @@
 <template>
-  <v-container>
+  <v-container class="py-5">
     <!-- Hero Section -->
-    <HeroSection
-      :title="heroData.title"
-      :description="heroData.description"
-      :image="heroData.image"
-    />
+      <HeroSection
+        :title="heroData.title"
+        :description="heroData.description"
+        :image="heroData.image"
+      />
 
     <!-- Sekcia kontinentov -->
-    <v-row class="text-center justify-center">
+    <v-row class="text-center justify-center my-5">
       <ContinentCard
         v-for="continent in continents"
         :key="continent.name"
@@ -41,7 +41,7 @@
     </v-row>
 
     <!-- Citát -->
-    <v-row class="text-center mt-5">
+    <v-row class="text-center my-5">
       <v-col>
         <figure>
           <blockquote class="blockquote">
@@ -55,7 +55,7 @@
     </v-row>
 
     <!-- Extra obsah -->
-    <v-row>
+    <v-row class="my-5">
       <ExtraCard
         v-for="extra in extras"
         :key="extra.title"
@@ -74,11 +74,11 @@
 </template>
 
 <script>
-import HeroSection from "@/components/HeroSection.vue";
-import ContinentCard from "@/components/ContinentCard.vue";
-import DestinationCard from "@/components/DestinationCard.vue";
-import ExtraCard from "@/components/ExtraCard.vue";
-import FactAccordion from "@/components/FactAccordion.vue";
+import HeroSection from "@/components/Home/HeroSection.vue";
+import ContinentCard from "@/components/Home/ContinentCard.vue";
+import DestinationCard from "@/components/Home/DestinationCard.vue";
+import ExtraCard from "@/components/Home/ExtraCard.vue";
+import FactAccordion from "@/components/Home/FactAccordion.vue";
 import HomeViewData from "@/assets/HomeView.json";
 
 export default {
@@ -92,7 +92,7 @@ export default {
   },
   data() {
     return {
-      heroData: HomeViewData.heroSection, // opravený kľúč
+      heroData: HomeViewData.heroSection,
       continents: HomeViewData.continents,
       destinations: HomeViewData.destinations,
       extras: HomeViewData.extras,
@@ -111,9 +111,28 @@ export default {
 .text-reset {
   color: inherit;
 }
+
+.hero-section-container {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.shadow-hover {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadow-hover:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.blockquote-footer {
+  font-size: 1rem;
+  color: #6c757d;
+}
 </style>
-
-
-
-
-

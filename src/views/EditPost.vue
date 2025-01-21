@@ -40,12 +40,3 @@ export default {
   },
 };
 </script>
-
-
-
-
-
-
-
-
-

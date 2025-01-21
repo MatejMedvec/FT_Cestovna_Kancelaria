@@ -14,23 +14,66 @@
         "title": "Bergen, Nórsko",
         "description": "Bergen je druhé najväčšie mesto v Nórsku.",
         "image": "/img/norway.jpg"
+      },
+      {
+        "title": "Palma de Mallorca, Mallorca",
+        "description": "Palma je hlavné mesto Malorky, známe svojou nádhernou gotickou katedrálou La Seu, historickými uličkami a krásnym prístavom.",
+        "image": "/img/Mallorca.jpeg"
+      },
+      {
+        "title": "Bali, Indonézia",
+        "description": "Bali je ostrov a provincie Indonézie.",
+        "image": "/img/Bali.webp"
       }
     ],
     "posts": [
       {
-        "title": "Západ slnka v Rio de Janeiro",
-        "description": "Nič nie je lepšie ako sa kochať na západ slnka v Riu.",
+        "id": 1,
         "image": "/img/Brazil.jpg"
       },
       {
-        "title": "Pestrofarebné Japonsko",
-        "description": "Nečakal by som, že japonsko je tak zaujímavé.",
+        "id": 2,
         "image": "/img/japan.jpg"
       },
       {
-        "title": "Golden Gate",
-        "description": "Amerika.",
+        "id": 3,
         "image": "/img/usa.jpg"
+      },
+      {
+        "id": 4,
+        "image": "/img/Alps.jpg"
+      },
+      {
+        "id": 5,
+        "image": "/img/paris.jpg"
+      },
+      {
+        "id": 6,
+        "image": "/img/Rome.jpg"
+      },
+      {
+        "id": 7,
+        "image": "/img/egypt.jpg"
+      },
+      {
+        "id": 8,
+        "image": "/img/grecko.jpg"
+      },
+      {
+        "id": 9,
+        "image": "/img/tunisko.jpg"
+      },
+      {
+        "id": 10,
+        "image": "/img/Bali.webp"
+      },
+      {
+        "id": 11,
+        "image": "/img/London.jpg"
+      },
+      {
+        "id": 12,
+        "image": "/img/fuji.jpg"
       }
     ]
   }
