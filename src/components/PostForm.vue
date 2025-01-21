@@ -1,4 +1,3 @@
-
 <template>
   <v-form @submit.prevent="submitForm">
     <v-text-field v-model="newPost.title" label="Názov príspevku" required />
@@ -9,29 +8,29 @@
 </template>
 
 <script>
+import { usePostsStore } from "@/stores/usePostsStore";
+import { ref } from "vue";
+
 export default {
   name: "PostForm",
-  data() {
-    return {
-      newPost: {
-        title: "",
-        content: "",
-        image_url: "",
-      },
+  setup(_, { emit }) {
+    const postsStore = usePostsStore();
+    const newPost = ref({
+      title: "",
+      content: "",
+      image_url: "",
+    });
+
+    const submitForm = () => {
+      postsStore.addPost(newPost.value);
+      newPost.value = { title: "", content: "", image_url: "" }; // Reset formulára
+      emit("post-added"); // Informuj rodiča o pridaní
     };
-  },
-  methods: {
-    submitForm() {
-      this.$emit("submit", { ...this.newPost }); // Emitujeme nový príspevok
-      this.resetForm(); // Resetujeme obsah formulára
-    },
-    resetForm() {
-      this.newPost = {
-        title: "",
-        content: "",
-        image_url: "",
-      };
-    },
+
+    return {
+      newPost,
+      submitForm,
+    };
   },
 };
 </script>
@@ -41,8 +40,9 @@ export default {
 
 
 
-  
-  
-  
 
-  
+
+
+
+
+

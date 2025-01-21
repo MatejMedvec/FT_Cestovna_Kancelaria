@@ -1,4 +1,3 @@
-
 <template>
     <v-expansion-panels>
       <v-expansion-panel v-for="(faq, index) in faqs" :key="index">
@@ -7,7 +6,7 @@
       </v-expansion-panel>
     </v-expansion-panels>
   </template>
-  
+
   <script>
   export default {
     name: "FAQSection",
@@ -19,6 +18,3 @@
     },
   };
   </script>
-
-
-  

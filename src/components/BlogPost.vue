@@ -1,7 +1,6 @@
-
 <template>
   <v-card class="mb-4">
-    <v-img :src="post.image_url" height="200" alt="Obrázok príspevku" />
+    <v-img :src="post.image_url" height="300" alt="Obrázok príspevku" />
     <v-card-title>{{ post.title }}</v-card-title>
     <v-card-subtitle>Publikované dňa {{ post.createdAt }}</v-card-subtitle>
     <v-card-text>{{ post.content }}</v-card-text>
@@ -14,7 +13,7 @@
 
 <script>
 export default {
-  name: "Post",
+  name: "BlogPost",
   props: {
     post: {
       type: Object,
@@ -30,4 +29,5 @@ export default {
 
 
 
-  
+
+

@@ -1,4 +1,3 @@
-
 <template>
   <v-row class="text-center py-5">
     <v-col>
@@ -20,7 +19,7 @@
 import BreadcrumbData from "@/assets/Breadcrumb.json";
 
 export default {
-  name: "Breadcrumbs",
+  name: "BreadcrumbsNav",
   props: {
     currentView: {
       type: String,

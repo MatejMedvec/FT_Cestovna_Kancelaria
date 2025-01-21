@@ -1,4 +1,3 @@
-
 <template>
     <v-col cols="12" md="4" class="text-center py-3">
       <i :class="icon" class="fa-2x"></i>
@@ -6,7 +5,7 @@
       <p>{{ description }}</p>
     </v-col>
   </template>
-  
+
   <script>
   export default {
     name: "ContinentCard",
@@ -30,7 +29,3 @@
     },
   };
   </script>
-
-
-
-  

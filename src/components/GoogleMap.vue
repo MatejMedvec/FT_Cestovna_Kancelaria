@@ -1,4 +1,3 @@
-
 <template>
     <div class="google-map">
       <iframe
@@ -12,7 +11,7 @@
       ></iframe>
     </div>
   </template>
-  
+
   <script>
   export default {
     name: "GoogleMap",
@@ -24,13 +23,9 @@
     },
   };
   </script>
-  
+
   <style scoped>
   .google-map iframe {
     border-radius: 10px;
   }
   </style>
-
-
-
-  

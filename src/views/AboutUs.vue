@@ -1,4 +1,3 @@
-
 <template>
   <v-container>
     <!-- Breadcrumbs -->
@@ -65,10 +64,3 @@ export default {
   border-radius: 10px;
 }
 </style>
-
-
-
-
-
-
-  

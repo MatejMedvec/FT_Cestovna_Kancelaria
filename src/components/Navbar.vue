@@ -1,4 +1,3 @@
-
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
@@ -6,7 +5,7 @@
         <RouterLink to="/" class="navbar-brand">
           <img src="/img/Logo.png" alt="logo" width="50" height="50" class="d-inline-block align-text-top" />
         </RouterLink>
-  
+
         <!-- Toggler button pre mobilné zariadenia -->
         <button
           class="navbar-toggler"
@@ -19,7 +18,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-  
+
         <!-- Navigačné odkazy -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-3">
@@ -39,7 +38,7 @@
               <RouterLink to="/contact" class="nav-link text fw-bold" active-class="active">Kontakt</RouterLink>
             </li>
           </ul>
-  
+
           <!-- Prihlásenie/Odhlásenie -->
           <ul class="navbar-nav">
             <li class="nav-item" v-if="isLoggedIn">
@@ -53,10 +52,10 @@
       </div>
     </nav>
   </template>
-  
+
   <script>
   export default {
-    name: 'Navbar',
+    name: 'NavbarView',
     data() {
       return {
         isLoggedIn: false, // Na základe stavu môžeš implementovať logiku prihlásenia
@@ -70,7 +69,7 @@
     },
   };
   </script>
-  
+
   <style scoped>
   .nav-link.active {
     font-weight: bold;
@@ -80,7 +79,3 @@
     border-radius: 50%; /* Príklad úpravy štýlu loga */
   }
   </style>
-
-
-
-  

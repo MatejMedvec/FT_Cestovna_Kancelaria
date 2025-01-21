@@ -1,4 +1,3 @@
-
 <template>
     <div class="accordion mb-5" id="accordionExample">
       <div
@@ -29,7 +28,7 @@
       </div>
     </div>
   </template>
-  
+
   <script>
   export default {
     name: "FactAccordion",
@@ -41,7 +40,3 @@
     },
   };
   </script>
-
-
-
-  

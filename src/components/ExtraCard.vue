@@ -1,4 +1,3 @@
-
 <template>
     <v-col cols="12" md="4" class="mb-3">
       <v-card>
@@ -13,7 +12,7 @@
       </v-card>
     </v-col>
   </template>
-  
+
   <script>
   export default {
     name: "ExtraCard",
@@ -33,7 +32,3 @@
     },
   };
   </script>
-
-
-
-  

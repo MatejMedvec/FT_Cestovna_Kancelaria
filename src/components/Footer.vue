@@ -1,4 +1,3 @@
-
 <template>
     <v-container fluid class="bg-light text-black mt-0">
       <v-row class="p-3">
@@ -31,35 +30,29 @@
           </ul>
         </v-col>
       </v-row>
-  
+
       <!-- Spodná časť -->
       <v-footer color="light" class="text-center py-3">
         <p class="mb-0">© Objavuj Svet. All rights reserved.</p>
       </v-footer>
     </v-container>
   </template>
-  
+
   <script>
   export default {
-    name: 'Footer',
+    name: 'FooterView',
   };
   </script>
-  
+
   <style scoped>
   /* Pridanie zarovnania na stred */
   .text-center p {
     text-align: center;
     margin: 0 auto;
   }
-  
+
   .v-footer {
     justify-content: center;
     align-items: center;
   }
   </style>
-  
-
-
-  
-
-  

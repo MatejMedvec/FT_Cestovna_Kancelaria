@@ -1,18 +1,12 @@
-
 <template>
   <v-container>
-    <!-- Breadcrumbs -->
-    <Breadcrumb :breadcrumbs="breadcrumbData.blog" />
-
-    <!-- Formulár na pridanie nového príspevku -->
-    <v-row class="mb-5">
-      <PostForm @submit="addPost" />
-    </v-row>
+    <!-- Formulár na pridanie príspevku -->
+    <PostForm @post-added="refreshPosts" />
 
     <!-- Zoznam príspevkov -->
     <v-row>
       <v-col cols="12" md="6" v-for="post in posts" :key="post.id">
-        <Post
+        <BlogPost
           :post="post"
           @edit="navigateToEdit"
           @delete="deletePost"
@@ -23,45 +17,49 @@
 </template>
 
 <script>
-import Breadcrumb from "@/components/Breadcrumb.vue";
+import { usePostsStore } from "@/stores/usePostsStore";
 import PostForm from "@/components/PostForm.vue";
-import Post from "@/components/Post.vue";
-import postsData from "@/assets/Posts.json";
-import breadcrumbData from "@/assets/Breadcrumb.json";
+import BlogPost from "@/components/BlogPost.vue";
+import { useRouter } from "vue-router";
+import { computed } from "vue";
 
 export default {
   name: "BlogView",
   components: {
-    Breadcrumb,
     PostForm,
-    Post,
+    BlogPost,
   },
-  data() {
-    return {
-      posts: postsData, // Načítanie zo súboru
-      breadcrumbData,
+  setup() {
+    const router = useRouter();
+    const postsStore = usePostsStore();
+
+    const posts = computed(() => postsStore.posts); // Reaktívny prístup k príspevkom
+
+    const refreshPosts = () => {
+      console.log("Príspevky aktualizované"); // Debugging
     };
-  },
-  methods: {
-    addPost(newPost) {
-      const newId = Date.now();
-      this.posts.push({
-        ...newPost,
-        id: newId,
-        createdAt: new Date().toISOString().split("T")[0],
-      });
-      localStorage.setItem("posts", JSON.stringify(this.posts));
-    },
-    navigateToEdit(post) {
-      this.$router.push({ name: "editPost", params: { id: post.id } });
-    },
-    deletePost(postId) {
-      this.posts = this.posts.filter((post) => post.id !== postId);
-      localStorage.setItem("posts", JSON.stringify(this.posts));
-    },
+
+    const navigateToEdit = (post) => {
+      router.push({ name: "editPost", params: { id: post.id } });
+    };
+
+    const deletePost = (postId) => {
+      postsStore.deletePost(postId);
+    };
+
+    return {
+      posts,
+      navigateToEdit,
+      deletePost,
+      refreshPosts,
+    };
   },
 };
 </script>
+
+
+
+
 
 
 

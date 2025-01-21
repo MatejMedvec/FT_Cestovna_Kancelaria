@@ -18,9 +18,4 @@
     { "text": "Domov", "href": "/" },
     { "text": "Blog", "href": "", "disabled": true }
   ]
-}
-
-
-  
-
-  
+} 

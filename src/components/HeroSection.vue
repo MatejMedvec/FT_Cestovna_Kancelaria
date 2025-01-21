@@ -1,4 +1,3 @@
-
 <template>
     <v-row class="text-center my-5 py-5 justify-center">
       <v-col cols="12" md="8">
@@ -15,7 +14,7 @@
       </v-col>
     </v-row>
   </template>
-  
+
   <script>
   export default {
     name: "HeroSection",
@@ -39,13 +38,9 @@
     },
   };
   </script>
-  
+
   <style scoped>
   .rounded-5 {
     border-radius: 15px;
   }
   </style>
-
-
-
-  
