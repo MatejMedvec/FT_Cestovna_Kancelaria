@@ -30,7 +30,7 @@ import postsData from "@/assets/Posts.json";
 import breadcrumbData from "@/assets/Breadcrumb.json";
 
 export default {
-  name: "Blog",
+  name: "BlogView",
   components: {
     Breadcrumb,
     PostForm,
