@@ -17,5 +17,9 @@
   "blog": [
     { "text": "Domov", "href": "/" },
     { "text": "Blog", "href": "", "disabled": true }
+  ],
+  "book": [
+    { "text": "Domov", "href": "/" },
+    { "text": "Rezervácia", "href": "", "disabled": true }
   ]
 } 

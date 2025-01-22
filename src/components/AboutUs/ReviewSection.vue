@@ -9,14 +9,8 @@
         <v-card-text>
           <p>{{ review.review }}</p>
           <div class="d-flex justify-center">
-            <!-- Renderovanie hviezdičiek podľa hodnotenia -->
-            <v-icon
-              v-for="star in 5"
-              :key="star"
-              color="yellow"
-            >
-              {{ star <= review.rating ? 'mdi-star' : 'mdi-star-outline' }}
-            </v-icon>
+            <v-icon v-for="star in 5" :key="star" color="yellow">
+              {{ star <= review.rating ? 'mdi-star' : 'mdi-star-outline' }} </v-icon>
           </div>
         </v-card-text>
       </v-card>
@@ -35,8 +29,3 @@ export default {
   },
 };
 </script>
-
-
-
-
-

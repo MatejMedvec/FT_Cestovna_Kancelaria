@@ -45,7 +45,6 @@
   </script>
 
   <style scoped>
-  /* Pridanie zarovnania na stred */
   .text-center p {
     text-align: center;
     margin: 0 auto;

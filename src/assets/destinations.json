@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Egypt",
+    "description": "Navštívte pyramídy v Gíze a preskúmajte históriu starovekého Egypta.",
+    "image": "/img/TopDestinations/egypt.jpg",
+    "price": 924
+  },
+  {
+    "id": 2,
+    "name": "Cyprus",
+    "description": "Relaxujte na krásnych plážach Cypru a objavte jeho bohatú kultúru.",
+    "image": "/img/TopDestinations/cyprus.jpeg",
+    "price": 930
+  },
+  {
+    "id": 3,
+    "name": "Grécko",
+    "description": "Užite si dovolenku v Grécku, krajine slnečných pláží a histórie.",
+    "image": "/img/TopDestinations/greece.jpg",
+    "price": 815
+  }
+]

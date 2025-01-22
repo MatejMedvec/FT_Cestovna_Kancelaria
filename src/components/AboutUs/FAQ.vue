@@ -1,10 +1,6 @@
 <template>
   <v-expansion-panels class="faq-section shadow-sm rounded-4">
-    <v-expansion-panel
-      v-for="(faq, index) in faqs"
-      :key="index"
-      class="faq-panel my-2"
-    >
+    <v-expansion-panel v-for="(faq, index) in faqs" :key="index" class="faq-panel my-2">
       <v-expansion-panel-title class="fw-bold text-primary">
         {{ faq.question }}
       </v-expansion-panel-title>
@@ -39,4 +35,3 @@ export default {
   border-radius: 10px;
 }
 </style>
-

@@ -38,16 +38,6 @@
               <RouterLink to="/contact" class="nav-link text fw-bold" active-class="active">Kontakt</RouterLink>
             </li>
           </ul>
-
-          <!-- Prihlásenie/Odhlásenie -->
-          <ul class="navbar-nav">
-            <li class="nav-item" v-if="isLoggedIn">
-              <button @click="logout" class="btn btn-primary">Odhlásiť sa</button>
-            </li>
-            <li class="nav-item" v-else>
-              <RouterLink to="/login" class="btn btn-primary">Prihlásiť sa</RouterLink>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
@@ -56,26 +46,15 @@
   <script>
   export default {
     name: 'NavbarView',
-    data() {
-      return {
-        isLoggedIn: false, // Na základe stavu môžeš implementovať logiku prihlásenia
-      };
-    },
-    methods: {
-      logout() {
-        this.isLoggedIn = false; // Pridaj vlastnú logiku na odhlásenie
-        alert('Boli ste odhlásený.');
-      },
-    },
   };
   </script>
 
   <style scoped>
   .nav-link.active {
     font-weight: bold;
-    color: #007bff; /* Zmena farby aktívneho odkazu */
+    color: #007bff;
   }
   .navbar-brand img {
-    border-radius: 50%; /* Príklad úpravy štýlu loga */
+    border-radius: 50%;
   }
   </style>

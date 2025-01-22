@@ -34,6 +34,7 @@
       <DestinationCard
         v-for="destination in destinations"
         :key="destination.name"
+        :id="destination.id"
         :name="destination.name"
         :image="destination.image"
         :price="destination.price"

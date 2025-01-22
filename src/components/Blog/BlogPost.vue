@@ -21,7 +21,7 @@ export default {
     },
     canEdit: {
       type: Boolean,
-      default: false, // Povolenie úprav len pre sekciu "Moje príspevky"
+      default: false, 
     },
   },
 };
@@ -29,19 +29,19 @@ export default {
 
 <style scoped>
 .blog-post-card {
-  border-radius: 16px; /* Zaoblenie karty */
-  overflow: hidden; /* Skrytie presahujúcich častí */
-  transition: transform 0.3s, box-shadow 0.3s; /* Animácia pri hover */
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .blog-post-card:hover {
-  transform: translateY(-5px); /* Jemné zdvihnutie pri hover */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Tieň pri hover */
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .blog-post-image {
-  border-radius: 16px 16px 0 0; /* Zaoblenie len na vrchu */
-  object-fit: cover; /* Prispôsobenie obrázka */
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
 }
 </style>
 

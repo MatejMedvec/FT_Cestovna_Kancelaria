@@ -47,12 +47,12 @@ export default {
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 5rem; /* Odstup od navbaru */
+  margin-top: 5rem;
 }
 
 .hero-container.hero-wide {
   max-width: 100%;
-  padding: 3rem 2rem; /* Zvýšenie priestoru vnútri */
+  padding: 3rem 2rem;
 }
 
 .hero-container:hover {
@@ -61,7 +61,7 @@ export default {
 }
 
 .hero-title {
-  font-size: 2.8rem; /* Mierne väčšie písmo */
+  font-size: 2.8rem;
   font-weight: bold;
   color: #343a40;
 }
@@ -74,7 +74,7 @@ export default {
 
 .hero-image {
   width: 100%;
-  max-width: 1000px; /* Zvýšená maximálna šírka */
+  max-width: 1000px; 
   border-radius: 15px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }

@@ -18,8 +18,8 @@
     }
   ],
   "map": {
-     "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42651.06138028969!2d18.227304031430585!3d48.0776005326773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b1cb96148f7c3%3A0xfad3a4b1688bd8d9!2s941%2043%20Doln%C3%BD%20Ohaj!5e0!3m2!1ssk!2ssk!4v1702657637464!5m2!1ssk!2ssk",
-     "alt": "Mapa lokality"
+    "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42651.06138028969!2d18.227304031430585!3d48.0776005326773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b1cb96148f7c3%3A0xfad3a4b1688bd8d9!2s941%2043%20Doln%C3%BD%20Ohaj!5e0!3m2!1ssk!2ssk!4v1702657637464!5m2!1ssk!2ssk",
+    "alt": "Mapa lokality"
   },
   "history": [
     {
@@ -71,4 +71,3 @@
     }
   ]
 }
- 

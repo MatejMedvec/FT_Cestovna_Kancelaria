@@ -1,9 +1,7 @@
 <template>
   <v-container>
-    <!-- Breadcrumbs -->
     <Breadcrumb currentView="aboutus" />
 
-    <!-- Kto sme sekcia -->
     <v-row class="text-center justify-center my-5">
       <v-col cols="12" md="8">
         <h1 class="pt-5 text-uppercase fw-bold">{{ aboutUs.title }}</h1>
@@ -11,7 +9,6 @@
       </v-col>
     </v-row>
 
-    <!-- Často kladené otázky -->
     <v-row class="text-center justify-center">
       <v-col cols="12" md="8">
         <h2 class="pt-5 text-uppercase fw-bold">Často kladené otázky</h2>
@@ -19,13 +16,10 @@
       </v-col>
     </v-row>
 
-    <!-- História sekcia -->
     <HistorySection :history="history" />
 
-    <!-- Hodnotenia od klientov -->
     <ReviewSection :reviews="reviews" />
 
-    <!-- Kde nás nájdete -->
     <v-row class="text-center justify-center">
       <v-col cols="12" md="8">
         <h2 class="pt-5 text-uppercase fw-bold">Kde nás nájdete</h2>
@@ -69,4 +63,3 @@ export default {
   text-transform: uppercase;
 }
 </style>
-

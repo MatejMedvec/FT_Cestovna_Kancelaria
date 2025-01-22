@@ -46,10 +46,10 @@ export default {
 
 <style scoped>
 .breadcrumb-container {
-  background-color: #f8f9fa; /* Svetlé pozadie */
+  background-color: #f8f9fa;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Jemný tieň */
-  margin-top: 80px; /* Väčšia vzdialenosť od navbaru */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
 }
 
 .breadcrumb-item {
@@ -58,12 +58,12 @@ export default {
 }
 
 .active-link {
-  color: #007bff; /* Modrá farba pre aktívne odkazy */
+  color: #007bff;
   text-decoration: none;
 }
 
 .inactive-link {
-  color: #6c757d; /* Svetlo šedá farba pre neaktívne */
+  color: #6c757d; 
   text-decoration: none;
 }
 

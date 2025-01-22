@@ -5,7 +5,7 @@ import Gallery from '../views/Gallery.vue'
 import Contact from '../views/ContactView.vue'
 import AboutUs from '../views/AboutUs.vue'
 import EditPost from '../views/EditPost.vue'
-
+import BookView from '../views/BookView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -40,7 +40,12 @@ const router = createRouter({
       name: 'editPost',
       component: EditPost,
       props: true,
-    }
+    },
+    {
+      path: '/book/:id',
+      name: 'bookview',
+      component: BookView,
+    },
   ],
 })
 

@@ -1,16 +1,13 @@
 <template>
   <v-container>
-    <!-- Breadcrumbs -->
     <Breadcrumb :currentView="'gallery'" />
 
-    <!-- Sekcia carousel -->
     <v-row justify="center" class="mb-5">
       <v-col cols="12" md="8">
         <CarouselGallery :slides="slides" />
       </v-col>
     </v-row>
 
-    <!-- Sekcia obľúbené obrázky -->
     <v-row v-if="favorites.length" class="mt-5">
       <v-col cols="12">
         <h2 class="text-reset fw-bold text-uppercase pb-2 text-center">Obľúbené</h2>
@@ -20,7 +17,6 @@
       </v-col>
     </v-row>
 
-    <!-- Sekcia všetkých obrázkov -->
     <v-row class="text-center mt-5">
       <v-col>
         <h2 class="text-reset fw-bold text-uppercase pb-2">Všetky obrázky</h2>
@@ -49,19 +45,17 @@ export default {
   },
   data() {
     return {
-      slides: galleryData.slides, // Dáta pre carousel
-      posts: galleryData.posts, // Dáta pre všetky obrázky
+      slides: galleryData.slides,
+      posts: galleryData.posts,
     };
   },
   computed: {
-    // Filter obľúbených obrázkov
     favorites() {
       return this.posts.filter((post) => post.favorite);
     },
   },
   methods: {
     toggleFavorite(image) {
-      // Prepnutie stavu obľúbeného
       image.favorite = !image.favorite;
     },
   },

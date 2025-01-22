@@ -44,28 +44,28 @@ export default {
 
 <style scoped>
 .extra-card {
-  border-radius: 16px; /* Zaoblenie celej karty */
-  overflow: hidden; /* Obrázok rešpektuje zaoblenie */
-  transition: transform 0.3s, box-shadow 0.3s; /* Plynulé animácie pri hover */
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .extra-card:hover {
-  transform: translateY(-5px); /* Jemné zdvihnutie karty */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Tieň pri hover */
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .extra-card-image {
-  border-radius: 16px 16px 0 0; /* Zaoblenie iba horných rohov obrázka */
-  object-fit: cover; /* Obrázok sa prispôsobí bez deformácie */
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
 }
 
 .text-uppercase {
-  letter-spacing: 1px; /* Väčší rozostup písmen */
-  margin-bottom: 8px; /* Medzera pod názvom */
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 
 .text-center {
-  text-align: center; /* Zarovnanie textu na stred */
+  text-align: center; 
 }
 </style>
 

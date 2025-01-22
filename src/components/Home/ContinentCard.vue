@@ -33,10 +33,10 @@ export default {
   },
   computed: {
     textClass() {
-      return this.color; // Použije farbu textu z prop
+      return this.color;
     },
     borderClass() {
-      return `border-${this.color.replace("text-", "")}`; // Odstráni "text-" a použije ako triedu okraja
+      return `border-${this.color.replace("text-", "")}`;
     },
   },
 };
@@ -51,22 +51,22 @@ export default {
 }
 .shadow-hover:hover {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  transform: translateY(-5px); /* Jemný zdvih na hover */
+  transform: translateY(-5px);
 }
 .border-primary {
-  border: 3px solid #007bff; /* Modrá */
+  border: 3px solid #007bff;
 }
 .border-success {
-  border: 3px solid #28a745; /* Zelená */
+  border: 3px solid #28a745;
 }
 .border-danger {
-  border: 3px solid #dc3545; /* Červená */
+  border: 3px solid #dc3545;
 }
 .border-warning {
-  border: 3px solid #ffc107; /* Žltá */
+  border: 3px solid #ffc107;
 }
 .border-info {
-  border: 3px solid #17a2b8; /* Svetlomodrá */
+  border: 3px solid #17a2b8; 
 }
 </style>
 

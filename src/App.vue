@@ -5,26 +5,23 @@ import Footer from './components/Shared/Footer.vue';
 
 <template>
   <v-app>
-    <!-- Navigačný panel -->
     <Navbar />
 
-    <!-- Hlavný obsah -->
     <v-main>
       <v-container class="main-container">
         <RouterView />
       </v-container>
     </v-main>
 
-    <!-- Footer -->
     <Footer />
   </v-app>
 </template>
 
 <style scoped>
 .main-container {
-  max-width: 1200px; /* Maximálna šírka stránky */
-  margin: 0 auto;   /* Centrovanie obsahu */
-  padding: 0 16px;  /* Priestor po stranách */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 </style>
 
