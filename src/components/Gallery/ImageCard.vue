@@ -1,16 +1,14 @@
 <template>
   <v-card class="image-card" elevation="3" hover>
-    <!-- Obrázok -->
+
     <v-img :src="image.image" alt="Obrázok" class="image-card-image" height="200" cover></v-img>
 
-    <!-- Akcie (stiahnuť, obľúbené) -->
     <v-card-actions class="justify-space-between">
-      <!-- Stiahnuť -->
+
       <v-btn icon color="primary" :href="image.image" download>
         <v-icon>mdi-download</v-icon>
       </v-btn>
 
-      <!-- Obľúbené -->
       <v-btn
         icon
         :color="image.favorite ? 'red' : 'grey'"
