@@ -18,6 +18,11 @@
     { "text": "Domov", "href": "/" },
     { "text": "Blog", "href": "", "disabled": true }
   ],
+  "editpost": [
+    { "text": "Domov", "href": "/" },
+    { "text": "Blog", "href": "/blog" },
+    { "text": "Upraviť príspevok", "href": "", "disabled": true }
+  ],
   "book": [
     { "text": "Domov", "href": "/" },
     { "text": "Rezervácia", "href": "", "disabled": true }

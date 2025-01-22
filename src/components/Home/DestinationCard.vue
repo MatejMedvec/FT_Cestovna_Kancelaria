@@ -5,7 +5,7 @@
       <v-card-title class="text-uppercase fw-bold text-center">{{ name }}</v-card-title>
       <v-card-text class="text-center">
         <div class="d-flex justify-space-between align-items-center">
-          <RouterLink :to="`/book/${id}`" class="btn btn-primary rounded-pill">
+          <RouterLink :to="`/book/${slug}`" class="btn btn-primary rounded-pill">
             Rezervovať
           </RouterLink>
           <p class="mb-0">od <strong>{{ price }} €</strong></p>
@@ -21,6 +21,10 @@ export default {
   props: {
     id: {
       type: Number,
+      required: true,
+    },
+    slug: {
+      type: String, 
       required: true,
     },
     name: {

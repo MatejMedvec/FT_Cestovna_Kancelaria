@@ -52,7 +52,7 @@ export default {
 
     const submitForm = () => {
       postsStore.addPost(newPost.value);
-      newPost.value = { title: "", content: "", image_url: "" }; 
+      newPost.value = { title: "", content: "", image_url: "" };
       emit("post-added");
     };
 

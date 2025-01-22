@@ -41,18 +41,21 @@
     {
       "id": 1,
       "name": "Egypt",
+      "slug": "egypt",
       "image": "/img/TopDestinations/egypt.jpg",
       "price": 924
     },
     {
       "id": 2,
       "name": "Cyprus",
+      "slug": "cyprus",
       "image": "/img/TopDestinations/cyprus.jpeg",
       "price": 930
     },
     {
       "id": 3,
       "name": "Grécko",
+      "slug": "greece",
       "image": "/img/TopDestinations/grecko.jpg",
       "price": 815
     }

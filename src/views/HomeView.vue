@@ -35,6 +35,7 @@
         v-for="destination in destinations"
         :key="destination.name"
         :id="destination.id"
+        :slug="destination.slug"
         :name="destination.name"
         :image="destination.image"
         :price="destination.price"

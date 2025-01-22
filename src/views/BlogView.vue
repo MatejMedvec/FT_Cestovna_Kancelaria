@@ -1,6 +1,5 @@
 <template>
   <v-container>
-
     <v-row class="section-spacing">
       <Breadcrumb :currentView="'blog'" />
     </v-row>
@@ -35,6 +34,7 @@ import PostForm from "@/components/Blog/PostForm.vue";
 import BlogPost from "@/components/Blog/BlogPost.vue";
 import Breadcrumb from "@/components/Shared/Breadcrumb.vue";
 import { computed } from "vue";
+import { useRouter } from "vue-router";
 import mockPosts from "@/assets/otherPosts.json";
 
 export default {
@@ -46,6 +46,7 @@ export default {
   },
   setup() {
     const postsStore = usePostsStore();
+    const router = useRouter();
 
     const userPosts = computed(() => postsStore.posts);
     const otherPosts = computed(() => mockPosts);
@@ -55,7 +56,7 @@ export default {
     };
 
     const navigateToEdit = (post) => {
-      console.log("Editovať príspevok:", post);
+      router.push({ name: "editPost", params: { id: post.id } });
     };
 
     const deletePost = (postId) => {
@@ -83,3 +84,6 @@ export default {
   text-transform: uppercase;
 }
 </style>
+
+
+

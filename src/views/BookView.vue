@@ -54,7 +54,6 @@
 import Breadcrumb from "@/components/Shared/Breadcrumb.vue";
 import destinations from "@/assets/destinations.json";
 
-
 export default {
   name: "BookView",
   components: {
@@ -71,8 +70,8 @@ export default {
     };
   },
   created() {
-    const id = Number(this.$route.params.id);
-    this.destination = destinations.find((dest) => dest.id === id);
+    const slug = this.$route.params.slug;
+    this.destination = destinations.find((dest) => dest.slug === slug);
 
     if (!this.destination) {
       this.$router.push("/");
@@ -101,4 +100,3 @@ export default {
   border-radius: 16px;
 }
 </style>
-

@@ -21,7 +21,7 @@ export default {
     },
     canEdit: {
       type: Boolean,
-      default: false, 
+      default: false,
     },
   },
 };
@@ -44,6 +44,7 @@ export default {
   object-fit: cover;
 }
 </style>
+
 
 
 
