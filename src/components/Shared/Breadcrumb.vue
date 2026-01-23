@@ -6,7 +6,7 @@
           <v-breadcrumbs-item
             v-for="(breadcrumb, index) in breadcrumbs"
             :key="index"
-            :href="breadcrumb.href"
+            :href="breadcrumbHref(breadcrumb.href)"
             :disabled="breadcrumb.disabled"
             class="breadcrumb-item"
           >
@@ -41,6 +41,14 @@ export default {
       return BreadcrumbData[this.currentView] || [];
     },
   },
+  methods: {
+    breadcrumbHref(href) {
+      if (!href) return undefined;
+
+      const clean = String(href).replace(/^\/+/, "");
+      return import.meta.env.BASE_URL + clean;
+    },
+  },
 };
 </script>
 
@@ -63,7 +71,7 @@ export default {
 }
 
 .inactive-link {
-  color: #6c757d; 
+  color: #6c757d;
   text-decoration: none;
 }
 
@@ -71,10 +79,3 @@ export default {
   text-decoration: underline;
 }
 </style>
-
-
-
-
-
-
-
