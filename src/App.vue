@@ -24,6 +24,3 @@ import Footer from './components/Shared/Footer.vue';
   padding: 0 16px;
 }
 </style>
-
-
-

@@ -26,5 +26,9 @@
   "book": [
     { "text": "Domov", "href": "/" },
     { "text": "Rezervácia", "href": "", "disabled": true }
+  ],
+  "reservations": [
+    { "text": "Domov", "href": "/", "disabled": false },
+    { "text": "Moje rezervácie", "href": "", "disabled": true }
   ]
-} 
+}

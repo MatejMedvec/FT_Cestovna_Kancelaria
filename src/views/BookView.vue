@@ -53,23 +53,23 @@
 <script>
 import Breadcrumb from "@/components/Shared/Breadcrumb.vue";
 import destinations from "@/assets/destinations.json";
+import { useReservationsStore } from "@/stores/useReservationsStore";
 
 export default {
   name: "BookView",
-  components: {
-    Breadcrumb,
-  },
+  components: { Breadcrumb },
+
   data() {
     return {
       destination: {},
-      reservationData: {
-        name: "",
-        email: "",
-        date: "",
-      },
+      reservationData: { name: "", email: "", date: "" },
+      reservationsStore: null,
     };
   },
+
   created() {
+    this.reservationsStore = useReservationsStore();
+
     const slug = this.$route.params.slug;
     this.destination = destinations.find((dest) => dest.slug === slug);
 
@@ -77,19 +77,34 @@ export default {
       this.$router.push("/");
     }
   },
+
   methods: {
     submitReservation() {
       if (!this.reservationData.name || !this.reservationData.email || !this.reservationData.date) {
         alert("Vyplňte všetky polia!");
         return;
       }
-      alert(`Rezervácia pre ${this.destination.name} bola úspešne odoslaná!`);
+
+      this.reservationsStore.addReservation({
+        name: this.reservationData.name,
+        email: this.reservationData.email,
+        date: this.reservationData.date,
+        destinationSlug: this.destination.slug,
+        destinationName: this.destination.name,
+        priceFrom: this.destination.price,
+      });
+
+      alert(`Rezervácia pre ${this.destination.name} bola uložená.`);
       this.reservationData = { name: "", email: "", date: "" };
-      this.$refs.reservationForm.reset();
+
+      if (this.$refs.reservationForm?.reset) {
+        this.$refs.reservationForm.reset();
+      }
     },
   },
 };
 </script>
+
 
 <style scoped>
 .text-uppercase {

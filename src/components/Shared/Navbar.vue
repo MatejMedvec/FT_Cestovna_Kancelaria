@@ -26,6 +26,9 @@
               <RouterLink to="/" class="nav-link text fw-bold" active-class="active">Domov</RouterLink>
             </li>
             <li class="nav-item">
+              <RouterLink to="/reservations" class="nav-link text fw-bold" active-class="active">Moje rezervácie</RouterLink>
+            </li>
+            <li class="nav-item">
               <RouterLink to="/aboutus" class="nav-link text fw-bold" active-class="active">O nás</RouterLink>
             </li>
             <li class="nav-item">

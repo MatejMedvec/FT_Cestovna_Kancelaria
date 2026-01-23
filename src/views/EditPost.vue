@@ -17,8 +17,6 @@
 
 <script>
 import { usePostsStore } from "@/stores/usePostsStore";
-import { ref, onMounted } from "vue";
-import { useRoute, useRouter } from "vue-router";
 import Breadcrumb from "@/components/Shared/Breadcrumb.vue";
 
 export default {
@@ -26,37 +24,46 @@ export default {
   components: {
     Breadcrumb,
   },
-  setup() {
-    const route = useRoute(); // Získajte ID z routy
-    const router = useRouter();
-    const postsStore = usePostsStore();
 
-    const post = ref(null);
-
-    onMounted(() => {
-      const postId = Number(route.params.id); // Načítajte ID z parametrov
-      const foundPost = postsStore.getPostById(postId);
-      if (foundPost) {
-        post.value = { ...foundPost };
-      } else {
-        console.error("Príspevok s daným ID nebol nájdený:", postId);
-      }
-    });
-
-    const submitEdit = () => {
-      if (post.value) {
-        postsStore.editPost(post.value); // Upravte príspevok v store
-        router.push({ name: "blog" }); // Presmerovanie na Blog stránku
-      } else {
-        console.error("Nie je možné uložiť zmeny, príspevok chýba.");
-      }
-    };
-
+  data() {
     return {
-      post,
-      submitEdit,
+      postsStore: null,
+      post: null,
     };
+  },
+
+  created() {
+    this.postsStore = usePostsStore();
+
+    const idRaw = this.$route.params.id;
+    const postId = typeof idRaw === "string" ? Number(idRaw) : idRaw;
+
+    const foundPost = this.postsStore.getPostById(postId);
+
+    if (foundPost) {
+      // kópia, aby si needitoval priamo referenciu v store
+      this.post = { ...foundPost };
+    } else {
+      console.error("Príspevok s daným ID nebol nájdený:", postId);
+    }
+  },
+
+  methods: {
+    submitEdit() {
+      if (!this.post) {
+        console.error("Nie je možné uložiť zmeny, príspevok chýba.");
+        return;
+      }
+
+      // voliteľná validácia
+      if (!this.post.title || !this.post.content || !this.post.image_url) {
+        alert("Vyplňte všetky polia!");
+        return;
+      }
+
+      this.postsStore.editPost(this.post);
+      this.$router.push({ name: "blog" });
+    },
   },
 };
 </script>
-

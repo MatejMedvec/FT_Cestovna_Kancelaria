@@ -33,8 +33,6 @@ import { usePostsStore } from "@/stores/usePostsStore";
 import PostForm from "@/components/Blog/PostForm.vue";
 import BlogPost from "@/components/Blog/BlogPost.vue";
 import Breadcrumb from "@/components/Shared/Breadcrumb.vue";
-import { computed } from "vue";
-import { useRouter } from "vue-router";
 import mockPosts from "@/assets/otherPosts.json";
 
 export default {
@@ -44,35 +42,39 @@ export default {
     BlogPost,
     Breadcrumb,
   },
-  setup() {
-    const postsStore = usePostsStore();
-    const router = useRouter();
 
-    const userPosts = computed(() => postsStore.posts);
-    const otherPosts = computed(() => mockPosts);
-
-    const refreshPosts = () => {
-      console.log("Príspevky aktualizované");
-    };
-
-    const navigateToEdit = (post) => {
-      router.push({ name: "editPost", params: { id: post.id } });
-    };
-
-    const deletePost = (postId) => {
-      postsStore.deletePost(postId);
-    };
-
+  data() {
     return {
-      userPosts,
-      otherPosts,
-      navigateToEdit,
-      deletePost,
-      refreshPosts,
+      postsStore: null,
+      otherPosts: mockPosts,
     };
+  },
+
+  computed: {
+    userPosts() {
+      return this.postsStore ? this.postsStore.posts : [];
+    },
+  },
+
+  created() {
+    this.postsStore = usePostsStore();
+  },
+
+  methods: {
+    refreshPosts() {
+    },
+
+    navigateToEdit(post) {
+      this.$router.push({ name: "editPost", params: { id: post.id } });
+    },
+
+    deletePost(postId) {
+      this.postsStore.deletePost(postId);
+    },
   },
 };
 </script>
+
 
 <style scoped>
 .section-spacing {
@@ -84,6 +86,3 @@ export default {
   text-transform: uppercase;
 }
 </style>
-
-
-
