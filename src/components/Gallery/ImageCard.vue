@@ -1,11 +1,22 @@
 <template>
   <v-card class="image-card" elevation="3" hover>
 
-    <v-img :src="image.image" alt="Obrázok" class="image-card-image" height="200" cover></v-img>
+    <v-img
+      :src="imgUrl(image.image)"
+      alt="Obrázok"
+      class="image-card-image"
+      height="200"
+      cover
+    />
 
     <v-card-actions class="justify-space-between">
 
-      <v-btn icon color="primary" :href="image.image" download>
+      <v-btn
+        icon
+        color="primary"
+        :href="imgUrl(image.image)"
+        download
+      >
         <v-icon>mdi-download</v-icon>
       </v-btn>
 
@@ -16,6 +27,7 @@
       >
         <v-icon>mdi-heart</v-icon>
       </v-btn>
+
     </v-card-actions>
   </v-card>
 </template>
@@ -27,6 +39,13 @@ export default {
     image: {
       type: Object,
       required: true,
+    },
+  },
+  methods: {
+    imgUrl(path) {
+      if (!path) return "";
+      const clean = String(path).replace(/^\/+/, "");
+      return import.meta.env.BASE_URL + clean;
     },
   },
 };

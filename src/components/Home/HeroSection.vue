@@ -4,9 +4,10 @@
       <v-col cols="12" md="8">
         <h1 class="hero-title">{{ title }}</h1>
         <p class="hero-description mt-4">{{ description }}</p>
+
         <div class="text-center">
           <img
-            :src="image"
+            :src="imgUrl(image)"
             :alt="altText"
             class="hero-image rounded-5 mb-4 mt-3"
           />
@@ -35,6 +36,13 @@ export default {
     altText: {
       type: String,
       default: "Hero image",
+    },
+  },
+  methods: {
+    imgUrl(path) {
+      if (!path) return "";
+      const clean = String(path).replace(/^\/+/, "");
+      return import.meta.env.BASE_URL + clean;
     },
   },
 };
@@ -74,7 +82,7 @@ export default {
 
 .hero-image {
   width: 100%;
-  max-width: 1000px; 
+  max-width: 1000px;
   border-radius: 15px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }

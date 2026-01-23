@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/FT_Cestovna_Kancelaria/',   // ⬅️ DOPLNIŤ TOTO
+  base: '/FT_Cestovna_Kancelaria/',   
   plugins: [
     vue(),
     vueDevTools(),

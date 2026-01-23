@@ -6,12 +6,12 @@
       hover
     >
       <v-img
-        :src="image"
+        :src="imgUrl(image)"
         :alt="title"
         class="extra-card-image"
         height="200"
         cover
-      ></v-img>
+      />
       <v-card-title class="text-uppercase fw-bold text-center">
         {{ title }}
       </v-card-title>
@@ -37,6 +37,13 @@ export default {
     description: {
       type: String,
       required: true,
+    },
+  },
+  methods: {
+    imgUrl(path) {
+      if (!path) return "";
+      const clean = String(path).replace(/^\/+/, "");
+      return import.meta.env.BASE_URL + clean;
     },
   },
 };
@@ -65,8 +72,6 @@ export default {
 }
 
 .text-center {
-  text-align: center; 
+  text-align: center;
 }
 </style>
-
-

@@ -3,77 +3,77 @@
     {
       "title": "Berlín, Nemecko",
       "description": "Brandenburská brána, patrí k najznámejším pamätihodnostiam Berlína.",
-      "image": "/img/Carousel/berlin.jpg"
+      "image": "img/Carousel/berlin.jpg"
     },
     {
       "title": "Benátky, Taliansko",
       "description": "Benátky sú hlavným mestom severotalianskeho regiónu Benátsko.",
-      "image": "/img/Carousel/benatky.jpg"
+      "image": "img/Carousel/benatky.jpg"
     },
     {
       "title": "Bergen, Nórsko",
       "description": "Bergen je druhé najväčšie mesto v Nórsku.",
-      "image": "/img/Carousel/norway.jpg"
+      "image": "img/Carousel/norway.jpg"
     },
     {
       "title": "Palma de Mallorca, Mallorca",
       "description": "Palma je hlavné mesto Malorky, známe svojou nádhernou gotickou katedrálou La Seu, historickými uličkami a krásnym prístavom.",
-      "image": "/img/Carousel/Mallorca.jpeg"
+      "image": "img/Carousel/Mallorca.jpeg"
     },
     {
       "title": "Bali, Indonézia",
       "description": "Bali je ostrov a provincie Indonézie.",
-      "image": "/img/Carousel/Bali.webp"
+      "image": "img/Carousel/Bali.webp"
     }
   ],
   "posts": [
     {
       "id": 1,
-      "image": "/img/Gallery/Brazil.jpg"
+      "image": "img/Gallery/Brazil.jpg"
     },
     {
       "id": 2,
-      "image": "/img/Gallery/japan.jpg"
+      "image": "img/Gallery/japan.jpg"
     },
     {
       "id": 3,
-      "image": "/img/Gallery/usa.jpg"
+      "image": "img/Gallery/usa.jpg"
     },
     {
       "id": 4,
-      "image": "/img/Gallery/Alps.jpg"
+      "image": "img/Gallery/Alps.jpg"
     },
     {
       "id": 5,
-      "image": "/img/Gallery/paris.jpg"
+      "image": "img/Gallery/paris.jpg"
     },
     {
       "id": 6,
-      "image": "/img/Gallery/Rome.jpg"
+      "image": "img/Gallery/Rome.jpg"
     },
     {
       "id": 7,
-      "image": "/img/Gallery/nature.jpg"
+      "image": "img/Gallery/nature.jpg"
     },
     {
       "id": 8,
-      "image": "/img/Gallery/greece.jpg"
+      "image": "img/Gallery/greece.jpg"
     },
     {
       "id": 9,
-      "image": "/img/Gallery/tunisko.jpg"
+      "image": "img/Gallery/tunisko.jpg"
     },
     {
       "id": 10,
-      "image": "/img/Gallery/SouthKorea.jpg"
+      "image": "img/Gallery/SouthKorea.jpg"
     },
     {
       "id": 11,
-      "image": "/img/Gallery/London.jpg"
+      "image": "img/Gallery/London.jpg"
     },
     {
       "id": 12,
-      "image": "/img/Gallery/fuji.jpg"
+      "image": "img/Gallery/fuji.jpg"
     }
   ]
 }

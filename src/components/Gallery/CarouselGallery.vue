@@ -2,7 +2,7 @@
   <v-carousel class="rounded-carousel" height="500">
     <v-carousel-item v-for="(slide, index) in slides" :key="index">
       <v-img
-        :src="slide.image"
+        :src="imgUrl(slide.image)"
         :alt="slide.title"
         class="carousel-image"
       >
@@ -12,6 +12,7 @@
           </v-row>
         </template>
       </v-img>
+
       <div class="text-overlay">
         <h3 class="text-white text-center">{{ slide.title }}</h3>
         <p class="text-white text-center">{{ slide.description }}</p>
@@ -27,6 +28,13 @@ export default {
     slides: {
       type: Array,
       required: true,
+    },
+  },
+  methods: {
+    imgUrl(path) {
+      if (!path) return "";
+      const clean = String(path).replace(/^\/+/, "");
+      return import.meta.env.BASE_URL + clean;
     },
   },
 };
@@ -61,3 +69,4 @@ export default {
   color: white;
 }
 </style>
+
