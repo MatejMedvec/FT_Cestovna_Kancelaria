@@ -6,16 +6,18 @@
           <v-breadcrumbs-item
             v-for="(breadcrumb, index) in breadcrumbs"
             :key="index"
-            :href="breadcrumbHref(breadcrumb.href)"
             :disabled="breadcrumb.disabled"
             class="breadcrumb-item"
           >
-            <span
-              :class="{
-                'active-link': !breadcrumb.disabled,
-                'inactive-link': breadcrumb.disabled,
-              }"
+            <RouterLink
+              v-if="breadcrumb.to && !breadcrumb.disabled"
+              :to="breadcrumb.to"
+              class="active-link"
             >
+              {{ breadcrumb.text }}
+            </RouterLink>
+
+            <span v-else class="inactive-link">
               {{ breadcrumb.text }}
             </span>
           </v-breadcrumbs-item>
@@ -39,14 +41,6 @@ export default {
   computed: {
     breadcrumbs() {
       return BreadcrumbData[this.currentView] || [];
-    },
-  },
-  methods: {
-    breadcrumbHref(href) {
-      if (!href) return undefined;
-
-      const clean = String(href).replace(/^\/+/, "");
-      return import.meta.env.BASE_URL + clean;
     },
   },
 };

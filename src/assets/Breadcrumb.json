@@ -1,34 +1,34 @@
 {
   "home": [
-    { "text": "Domov", "href": "/", "disabled": true }
+    { "text": "Domov", "to": "/", "disabled": true }
   ],
   "aboutus": [
-    { "text": "Domov", "href": "/" },
-    { "text": "O nás", "href": "", "disabled": true }
+    { "text": "Domov", "to": "/" },
+    { "text": "O nás", "to": "/aboutus", "disabled": true }
   ],
   "gallery": [
-    { "text": "Domov", "href": "/" },
-    { "text": "Galéria", "href": "", "disabled": true }
+    { "text": "Domov", "to": "/" },
+    { "text": "Galéria", "to": "/gallery", "disabled": true }
   ],
   "contact": [
-    { "text": "Domov", "href": "/" },
-    { "text": "Kontakt", "href": "", "disabled": true }
+    { "text": "Domov", "to": "/" },
+    { "text": "Kontakt", "to": "/contact", "disabled": true }
   ],
   "blog": [
-    { "text": "Domov", "href": "/" },
-    { "text": "Blog", "href": "", "disabled": true }
+    { "text": "Domov", "to": "/" },
+    { "text": "Blog", "to": "/blog", "disabled": true }
   ],
   "editpost": [
-    { "text": "Domov", "href": "/" },
-    { "text": "Blog", "href": "/blog" },
-    { "text": "Upraviť príspevok", "href": "", "disabled": true }
+    { "text": "Domov", "to": "/" },
+    { "text": "Blog", "to": "/blog" },
+    { "text": "Upraviť príspevok", "disabled": true }
   ],
   "book": [
-    { "text": "Domov", "href": "/" },
-    { "text": "Rezervácia", "href": "", "disabled": true }
+    { "text": "Domov", "to": "/" },
+    { "text": "Rezervácia", "disabled": true }
   ],
   "reservations": [
-    { "text": "Domov", "href": "/", "disabled": false },
-    { "text": "Moje rezervácie", "href": "", "disabled": true }
+    { "text": "Domov", "to": "/", "disabled": false },
+    { "text": "Moje rezervácie", "disabled": true }
   ]
 }
