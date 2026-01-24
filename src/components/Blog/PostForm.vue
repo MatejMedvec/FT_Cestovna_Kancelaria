@@ -11,6 +11,7 @@
             required
           />
         </v-col>
+
         <v-col cols="12">
           <v-textarea
             v-model="newPost.content"
@@ -21,6 +22,7 @@
             required
           />
         </v-col>
+
         <v-col cols="12">
           <v-text-field
             v-model="newPost.image_url"
@@ -31,35 +33,48 @@
           />
         </v-col>
       </v-row>
-      <v-btn type="submit" color="primary" block>Pridať príspevok</v-btn>
+
+      <v-btn type="submit" color="primary" block>
+        Pridať príspevok
+      </v-btn>
     </v-form>
   </v-container>
 </template>
 
 <script>
 import { usePostsStore } from "@/stores/usePostsStore";
-import { ref } from "vue";
 
 export default {
   name: "PostForm",
-  setup(_, { emit }) {
-    const postsStore = usePostsStore();
-    const newPost = ref({
-      title: "",
-      content: "",
-      image_url: "",
-    });
 
-    const submitForm = () => {
-      postsStore.addPost(newPost.value);
-      newPost.value = { title: "", content: "", image_url: "" };
-      emit("post-added");
-    };
-
+  data() {
     return {
-      newPost,
-      submitForm,
+      postsStore: null,
+      newPost: {
+        title: "",
+        content: "",
+        image_url: "",
+      },
     };
+  },
+
+  created() {
+    this.postsStore = usePostsStore();
+  },
+
+  methods: {
+    submitForm() {
+      if (!this.newPost.title || !this.newPost.content || !this.newPost.image_url) {
+        alert("Vyplňte všetky polia!");
+        return;
+      }
+
+      this.postsStore.addPost({ ...this.newPost });
+
+      this.newPost = { title: "", content: "", image_url: "" };
+
+      this.$emit("post-added");
+    },
   },
 };
 </script>
@@ -71,6 +86,3 @@ export default {
   margin: 0 auto;
 }
 </style>
-
-
-
