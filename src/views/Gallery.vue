@@ -48,7 +48,7 @@ export default {
   data() {
     return {
       slides: galleryData.slides,
-      posts: galleryData.posts.map((p) => ({ ...p, favorite: false })), // kópia + default favorite
+      posts: galleryData.posts.map((p) => ({ ...p, favorite: false })), 
     };
   },
 
