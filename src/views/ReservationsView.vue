@@ -93,7 +93,7 @@ export default {
 
       dialog: {
         open: false,
-        type: null, // "one" | "all"
+        type: null, 
         reservationId: null,
         title: "",
         message: "",
