@@ -41,7 +41,6 @@ export default {
     const foundPost = this.postsStore.getPostById(postId);
 
     if (foundPost) {
-      // kópia, aby si needitoval priamo referenciu v store
       this.post = { ...foundPost };
     } else {
       console.error("Príspevok s daným ID nebol nájdený:", postId);
@@ -55,7 +54,6 @@ export default {
         return;
       }
 
-      // voliteľná validácia
       if (!this.post.title || !this.post.content || !this.post.image_url) {
         alert("Vyplňte všetky polia!");
         return;
